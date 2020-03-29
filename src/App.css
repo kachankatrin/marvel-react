@@ -2,18 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +24,44 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.mr-auto {
+  width: 30%;
+  justify-content: space-evenly;
+}
+.list-group-item {
+  border: none !important;
+  margin: 2rem;
+  text-align: center;
+  border-radius: 15px;
+}
+.form-inline {
+  padding: 0 2rem;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem;
+}
+
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+.list-group-item:first-child {
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+.form-control {
+  flex: 10
+}
+.btn {
+  flex: 1;
+}
+.load {
+  text-align: center;
+  margin: 2rem;
 }

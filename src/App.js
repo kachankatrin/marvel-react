@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Characters from "./containers/Characters";
+import Stories from "./containers/Stories";
+import Main from "./containers/Main"
+import {Switch, Route, Link } from 'react-router-dom';
+import Navigation from './components/Nav'
 
+// const api = 'http://gateway.marvel.com/v1/public/';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>
+    <Navigation>
+      <Link to='/'>Main</Link>
+      <Link to='/characters'>Characters</Link>
+      <Link to='/stories'>Stories</Link>
+    </Navigation>
+  <Switch>
+    <Route path='/characters'>
+      <Characters />
+    </Route>
+    <Route path='/stories'>
+      <Stories/>
+    </Route>
+    <Route path='/'>
+      <Main/>
+    </Route>
+  </Switch>
+  </div>
+  )
 }
-
 export default App;
