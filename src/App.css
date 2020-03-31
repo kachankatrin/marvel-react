@@ -52,8 +52,8 @@
   border-bottom-left-radius: 15px !important;
 }
 .list-group-item:first-child {
-  border-bottom-right-radius: 15px !important;
-  border-bottom-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  border-top-left-radius: 15px !important;
 }
 .form-control {
   flex: 10
@@ -64,4 +64,17 @@
 .load {
   text-align: center;
   margin: 2rem;
+}
+.accordion {
+  padding: 30px;
+}
+.btn-back {
+  margin-top: -3rem;
+  margin-left: -3rem;
+}
+.charInfo {
+  padding: 2rem 2rem !important;
+}
+.greet {
+  text-align: center;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Characters from "./containers/Characters";
 import Stories from "./containers/Stories";
+import CharacterInfo from "./containers/characterInfo"
 import Main from "./containers/Main"
 import {Switch, Route, Link } from 'react-router-dom';
 import Navigation from './components/Nav'
@@ -15,15 +16,12 @@ function App() {
       <Link to='/stories'>Stories</Link>
     </Navigation>
   <Switch>
-    <Route path='/characters'>
-      <Characters />
-    </Route>
+    <Route path='/characters/' exact component={Characters}/>
     <Route path='/stories'>
       <Stories/>
     </Route>
-    <Route path='/'>
-      <Main/>
-    </Route>
+    <Route path='/' exact component={Main}/>
+    <Route path='/characters/:id' component={CharacterInfo}/>
   </Switch>
   </div>
   )
