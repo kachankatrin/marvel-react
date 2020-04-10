@@ -1,7 +1,22 @@
 .App {
   text-align: center;
 }
-
+.btnmy {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.far {
+  font-size: 20px;
+  color: rgba(27, 44, 144, 0.698);
+}
+.fas {
+  font-size: 25px;
+  color: red;
+}
+.btnContainer {
+  position: absolute;
+}
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
